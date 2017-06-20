@@ -17,7 +17,7 @@ iOS 10.0+
 ![image](https://github.com/Revo-Future/MobileNet-iOS/blob/master/example.PNG)
 
 # Notice
-This project can't be run on iOS simulator, as iOS simulator didn't support metal.
+This project can't run on iOS simulator, as iOS simulator don't support metal.
 
 # Reference
 * https://developer.apple.com/library/content/samplecode/MPSCNNHelloWorld/Introduction/Intro.html#//apple_ref/doc/uid/TP40017482
