@@ -3,8 +3,8 @@ Google's MobileNet on iOS. Specifically, mobileNet is implemented by MPSCNN whic
 
 The mobileNet is trained by Caffe on Serve, and then convert the weights to MPSCNN weight format. This part is finished by my colleague.
 
-For ordinary convolution in MPSCNN, weight format is [outputChannel][kernelY][kernelX][inputChannel]
-For depthwise convolution, weight format is [kernelHeight][kernelWidth][featureChannels]
+For ordinary convolution in MPSCNN, weight format is **[outputChannel][kernelHeight][kernelWidth][inputChannel]**
+For depthwise convolution, weight format is **[kernelHeight][kernelWidth][featureChannels]**
 
 # Requirements
 Xcode 8.0
