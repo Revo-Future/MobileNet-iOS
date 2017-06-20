@@ -1,7 +1,7 @@
 # MobileNet-iOS
-Google's MobileNet on iOS. Specifically, mobileNet is implemented by MPSCNN which use the Metal to improve the CNN performence. The mobileNet architecture comes from the paper [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications.](https://arxiv.org/abs/1704.04861v1)
+Google's MobileNet on iOS. Specifically, mobileNet is implemented by MPSCNN which use the Metal to improve the CNN performence. MobileNet architecture comes from the paper [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications.](https://arxiv.org/abs/1704.04861v1)
 
-The mobileNet is trained by Caffe on Serve, and then convert the weights to MPSCNN weight format. This part is finished by my colleague.
+The mobileNet is trained by Caffe on Server, and then convert the weights to MPSCNN weight format. This part is finished by my colleague.
 
 For ordinary convolution in MPSCNN, weight format is **[outputChannel][kernelHeight][kernelWidth][inputChannel]**
 For depthwise convolution, weight format is **[kernelHeight][kernelWidth][featureChannels]**
