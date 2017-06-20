@@ -6,6 +6,8 @@ The mobileNet is trained by Caffe on Serve, and then convert the weights to MPSC
 For ordinary convolution in MPSCNN, weight format is **[outputChannel][kernelHeight][kernelWidth][inputChannel]**
 For depthwise convolution, weight format is **[kernelHeight][kernelWidth][featureChannels]**
 
+The trained mobileNet model is 16.9M, which is pretty small. And the inference time on iphone 6s plus is about 50ms, it's pretty fast. For iphone 7, it must be faster.
+
 # Requirements
 Xcode 8.0
 
@@ -19,3 +21,4 @@ This project can't be run on iOS simulator, as iOS simulator didn't support meta
 * https://developer.apple.com/library/content/samplecode/MetalImageRecognition/Introduction/Intro.html
 * https://stackoverflow.com/questions/40522224/mpscnn-weight-ordering
 * https://github.com/hollance/Forge
+* https://github.com/shicai/MobileNet-Caffe
