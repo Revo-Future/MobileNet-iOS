@@ -33,12 +33,12 @@ extension MPSImage {
                             slice: i)
     }
     
-    self.texture.getBytes(&(outputFloat16[self.width * self.height * 4 * 0]),
-                          bytesPerRow: self.width * 4 * MemoryLayout<UInt16>.size,
-                          bytesPerImage: 0,
-                          from: region,
-                          mipmapLevel: 0,
-                          slice: 0)
+//    self.texture.getBytes(&(outputFloat16[self.width * self.height * 4 * 0]),
+//                          bytesPerRow: self.width * 4 * MemoryLayout<UInt16>.size,
+//                          bytesPerImage: 0,
+//                          from: region,
+//                          mipmapLevel: 0,
+//                          slice: 0)
 
     // Use vImage to convert the float16 values to regular Swift Floats.
     var outputFloat32 = [Float](repeating: 0, count: count)
