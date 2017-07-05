@@ -157,7 +157,7 @@ public class DepthwiseConvolutionKernel {
             functionName = "depthwiseConv3x3_array"
         }
         pipeline = makeFunction(device: device, name: functionName,
-                                constantValues: constants, useForgeLibrary: true)
+                                constantValues: constants, useForgeLibrary: false)
         self.device = device
         self.neuron = neuronFilter
         self.params = params
